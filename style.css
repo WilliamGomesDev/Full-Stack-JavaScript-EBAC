@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 16px 0;
+    color: rgba(32, 144, 235, 0.864);
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 36px;
+    margin-bottom: 10px;
+    margin-right: 16px;
+    max-width: 100%;
+}
+
+/* Estilização do formulário */
+form {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 12px 0;
+    text-align: center;
+}
+
+/* Estilização dos campos de entrada e botão */
+input, button {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+
+button, .adicionar {
+    background-color: rgba(234, 169, 49, 0.904);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+button, .refazer {
+    background-color: rgba(30, 167, 30, 0.785);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilos específicos para as listas de tarefas */
+.lista {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilização dos itens da lista */
+.lista .li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.lista li {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    color:rgba(32, 144, 235, 0.864) ;
+}
+
+
+/* Estilização dos itens completados */
+.lista .completed {
+    text-decoration: line-through red;
+}
