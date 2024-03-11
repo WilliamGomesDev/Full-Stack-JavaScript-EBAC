@@ -1,0 +1,121 @@
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'IBM Plex', sans-serif; 
+        
+}
+:root {
+        --cor-lilas-suave: #e6e6fa; /* Lilás suave */
+        --cor-texto: #333; /* Cor do texto */
+        --cor-borda: #ccc; /* Cor da borda */
+    }
+
+/* Estilização do cabeçalho */
+header {
+        background-color: #6b5b9d;
+        color: white;
+        padding: 16px 0;
+        justify-content: center;
+        text-align: center;
+        }
+
+header h2 {
+        font-style: italic;
+        font-size: medium;
+        color:#ccc;
+}
+
+
+.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--cor-lilas-suave); /* Cor de fundo */
+        border-radius: 20px; /* Bordas redondas */
+        padding: 20px; /* Espaçamento interno */
+        border: 1px solid var(--cor-borda); /* Borda simples */
+        width: 80%;
+        max-width: 600%;
+        margin: 20px auto;
+}
+
+body, p, label, input, button {
+        color: var(--cor-texto); /* Cor do texto */
+}
+
+input {
+        border: none; /* Remove a borda */
+        outline: none; /* Remove a borda de foco */
+}
+
+
+.form-nome, .form-email, .form-rua, .form-telefone {
+        color: blue;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 12px 0;
+        
+}
+
+.form-bairro, .form-cep{
+        color: blue;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 16px 0;
+}
+
+.form-cidade, .form-estado, .form-numero{
+        color: blue;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 16px 0;
+}
+
+.form-complemento, .form-cpf{
+        color: blue;
+        margin-right: 10px;
+        padding: 16px 0;
+}
+
+.form-group {
+        margin-bottom: 20px; /* Adiciona espaço entre os campos */
+        display: flex; /* Coloca os campos e mensagens de erro em linha */
+        align-items: center; /* Alinha verticalmente os elementos */
+}
+        .form-group label {
+        margin-right: 10px;
+        color: blue;
+}
+
+        .form-group input,
+        .form-group select {
+        flex: 1; /* Faz os campos ocuparem todo o espaço disponível */
+        padding: 10px;
+}
+
+        .error-message {
+        color: red;
+        font-size: 12px;
+        margin-left: 10px; /* Adiciona espaço entre o campo e a mensagem de erro */
+}
+
+button {
+        background-color: #7b68a6; /* Lilás mais forte */
+        color: white; /* Cor do texto */
+        border: none; /* Remove as bordas */
+        border-radius: 20px; /* Bordas arredondadas */
+        padding: 10px 20px; /* Espaçamento interno */
+        cursor: pointer; /* Cursor de ponteiro */
+}
+
+    /* Aplicando a cor de fundo dos botões ao passar o mouse */
+button:hover {
+        background-color: #6b5b9d; /* Lilás mais escuro ao passar o mouse */
+}
+
+body {
+        background-color: var(--cor-lilas-suave); /* Cor de fundo */
+}
