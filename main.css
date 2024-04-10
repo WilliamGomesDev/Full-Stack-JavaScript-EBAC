@@ -1,0 +1,379 @@
+/* Define o box-sizing para border-box em todos os elementos */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif; /* Define a família de fontes padrão */
+}
+
+body {
+    overflow-x: hidden; /* Desativa a rolagem horizontal */
+}
+
+/* Estilos para o container principal */
+.container {
+    margin-left: 4%; /* Margem esquerda de 14% em relação ao contêiner pai */
+    margin-right: 12%; /* Margem direita de 12% em relação ao contêiner pai */
+    max-width: 100%; /* Largura máxima de 100% */
+    display: flex; /* Utiliza flexbox para organizar os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+
+/* Estilos para o container do menu */
+.container-menu {
+    max-width: 70%; /* Largura máxima de 70% */
+    width: 100%; /* Largura de 100% */
+    margin: 0 auto; /* Margens automáticas para centralizar horizontalmente */
+}
+
+/* Estilos para o container do título */
+.container-h1 {
+    max-width: 70%; /* Largura máxima de 70% */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 8px 16px; /* Espaçamento interno de 8px no topo/bottom e 16px nos lados */
+    margin-left: 20px; /* Margem esquerda de 20px */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    padding: 16px; /* Espaçamento interno de 16px */
+    border-bottom: 1px solid #ccc; /* Borda inferior de 1px sólida */
+    margin-bottom: 20px; /* Margem inferior de 20px */
+    background-color: #007bff ;
+    color: white;
+}
+
+/* Estilos para a caixa de pesquisa */
+.search-box {
+    max-width: 70%; /* Largura máxima de 70% */
+    display: flex; /* Utiliza flexbox para organizar os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Estilos para a botão de pesquisa */
+.container button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Estilos para a caixa de pesquisa input[type="text"] */
+.search-box input[type="text"] {
+    flex: 1; /* Utiliza flex para expandir o input */
+    padding: 0.5em 1em; /* Espaçamento interno de 0.5em no topo/bottom e 1em nos lados. Utiliza medidas flexíveis para o padding */
+    margin-right: 1%; /* Margem direita de 1% */
+    border-radius: 4px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda de 1px sólida */
+}
+
+/* Estilos para o botão dentro da caixa de pesquisa */
+.search-box button {
+    padding: 0.5em 1em; /* Espaçamento interno de 0.5em no topo/bottom e 1em nos lados. Utiliza medidas flexíveis para o padding */
+    border: none; /* Remove a borda */
+    background-color: yellow; /* Cor de fundo */
+    color: #007bff;/* Cor do texto */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+}
+
+/* Estilos para o botão de hover */
+.search-box button:hover {
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o menu */
+.menu {
+    align-items: center; /* Alinha os itens verticalmente */
+    display: flex; /* Utiliza flexbox para organizar os itens */
+    list-style-type:none; /* Remove os marcadores da lista */
+    margin-left: 65px; /* Margem esquerda de 65px */
+}
+
+/* Estilos para os itens do menu */
+.menu li {
+    margin-left: 20px; /* Margem esquerda de 20px */
+}
+
+/* Estilos para o conteúdo principal */
+.conteudo {
+    max-width:90%; /* Define a largura máxima como 70% da largura da tela */
+    margin-left: auto; /* Margens automáticas para centralizar */
+    margin-right: auto;
+    padding: 20px; /* Adiciona um espaçamento interno ao conteúdo */
+}
+
+/* Adicione estilos para o novo layout do texto ao lado da imagem */
+.sobre .sobre-content {
+    display: flex; /* Utiliza flexbox para organizar os itens */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-content img {
+    margin-bottom: 10px; /* Adiciona uma margem inferior à imagem */
+    height: 320px;
+    width: 320px;
+}
+
+
+.sobre .sobre-content .text-content {
+    margin-left: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+
+/* Estilos para a linha separadora */
+.sobre .sobre-content hr {
+    margin-top: 8px; /* Margem superior de 8px */
+    margin-bottom: 48px; /* Margem inferior de 48px */
+    border: 0;  /* Remove a borda */
+    border-top: 1px solid #ccc; /* Borda superior de 1px sólida */
+    border-top-color: #007bff; /* Define a cor da borda superior como azul */
+}
+
+/* Estilos para a seção "Sobre a Loja" */
+.sobre-a-loja {
+    margin-bottom: 32px; /* Margem inferior de 32px */
+}
+
+/* Estilos para o título h2 em seções */
+section h2 {
+    margin-bottom: 32px; /* Margem inferior de 32px */
+    color: #007bff;
+}
+.produtos h2 {
+    margin-bottom: 16px; /* Margem inferior de 16px */
+    color: black;
+}
+
+/* Estilos para o título h3 em seções */
+.text-content h3 {
+    font-weight: normal; /* Define o peso da fonte como normal (não em negrito) */
+}
+
+.produtos img {
+    height: 320px;
+    width: 320px;
+}
+.produtos h3 {
+    font-weight: normal; /* Define o peso da fonte como normal (não em negrito) */
+    margin-top: 0.5px;
+}
+
+.carrinho button {
+    padding: 0.5em 1em; /* Espaçamento interno de 0.5em no topo/bottom e 1em nos lados. Utiliza medidas flexíveis para o padding */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda de 1px sólida */
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 64px; /* Margem inferior de 16px */
+    width: 50%;
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+}
+
+.carrinho button:hover {
+    background-color: rgb(225, 225, 125); /* Altera a cor de fundo ao passar o mouse */
+}
+
+.preco {
+    color: green;
+}
+
+
+/* Estilos para a seção "Todos os Produtos" */
+.todos-os-produtos hr {
+    margin-top: 1px; /* Margem superior de 1px */
+    margin-bottom: 48px; /* Margem inferior de 48px */
+    border: 0; /* Remove a borda */
+    border-top: 1px solid #ccc; /* Borda superior de 1px sólida */
+    border-top-color: #007bff; /* Define a cor da borda superior como azul */
+}
+
+/* Estilos para a disposição dos produtos */
+.produtos {
+    display: grid; /* Utiliza grid para organizar os produtos */
+    grid-template-columns: repeat(4, 24.5%); /* Define as colunas do grid */
+    column-gap: 2%; /* Espaçamento entre colunas */
+    row-gap: 5%; /* Espaçamento entre linhas */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Layout mobile*/
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 90%;
+        display: block;
+    }
+    .container-h1 {
+        margin-left: 0;
+    }
+    .search-box {
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .container-menu {
+        max-width: 100%; /* Ajusta a largura máxima */
+        display: block; /* Altera para display de bloco */
+    }
+    .menu {
+        margin-left: 0; /* Remove a margem esquerda */
+        list-style-type: none; /* Remove os marcadores da lista */
+        padding-left: 0; /* Remove o preenchimento à esquerda */
+        margin-top: 10px;
+    }
+    .menu li {
+        margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    }
+    .conteudo {
+        width: 100%;
+        display: block;
+    }
+    .sobre .sobre-content  {
+        display: block;
+        
+    }
+    .sobre .sobre-content .text-content {
+        text-align: left; /* Centraliza o texto */
+        margin-bottom: 10px; /* Aumentar a margem inferior */
+    }
+    .sobre .sobre-content hr {
+        width: 100%;
+        margin-top: 0; /* Remover a margem superior */
+        margin-bottom: 10px; /* Aumentar a margem inferior */
+    }
+    .sobre-content img {
+        margin-bottom: 10px; /* Adiciona uma margem inferior à imagem */
+        height: 320px;
+        width: 320px;
+    }
+    
+    /* Estilos para a seção "Sobre a Loja" */
+    .sobre-a-loja {
+        margin-bottom: 32px; /* Margem inferior de 32px */
+    }
+    
+    /* Estilos para o título h2 em seções */
+    section h2 {
+        font-size: 1.5em;
+        color: #007bff;
+    }
+    
+    /* Estilos para a seção "Todos os Produtos" */
+    .todos-os-produtos hr {
+        margin-bottom: 12px; /* Margem inferior de 48px */
+    }
+
+    .produtos img {
+        height: 320px;
+        width: 320px;
+    }
+
+    .carrinho button {
+        width: 100%;
+    }
+    
+    /* Estilos para a disposição dos produtos */
+    .produtos {
+        display: block; /* Utiliza grid para organizar os produtos */
+        row-gap: 5%; /* Espaçamento entre linhas */
+        max-width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/*Layout tablet*/
+@media screen and (min-width:641px) and (max-width: 1023px)  {
+
+    body {
+        overflow-x: hidden; /* Desativa a rolagem horizontal */
+    }
+
+    .container{
+        max-width: 100%;
+        display: flex;
+    }
+    .header{
+        max-width: 100%;
+    }
+    .container-h1 {
+        margin-left: 0;
+    }
+    .search-box {
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .container-menu {
+        max-width: 100%; /* Ajusta a largura máxima */
+        display: flex; /* Altera para display de bloco */
+    }
+    .menu {
+        margin-left: 0; /* Remove a margem esquerda */
+        list-style-type: none; /* Remove os marcadores da lista */
+        padding-left: 0; /* Remove o preenchimento à esquerda */
+        margin-top: 10px;
+    }
+    .menu li {
+        margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    }
+    .conteudo {
+        width: 100%;
+        display: block;
+    }
+    .sobre .sobre-content  {
+        display: block;
+    }
+    .sobre .sobre-content .text-content {
+        text-align: left; /* Centraliza o texto */
+        margin-bottom: 10px; /* Aumentar a margem inferior */
+    }
+    .sobre .sobre-content hr {
+        width: 100%;
+        margin-top: 0; /* Remover a margem superior */
+        margin-bottom: 10px; /* Aumentar a margem inferior */
+    }
+    .sobre-content img {
+        margin-bottom: 10px; /* Adiciona uma margem inferior à imagem */
+        height: 500px;
+        width: 500px;
+    }
+    
+    /* Estilos para a seção "Sobre a Loja" */
+    .sobre-a-loja {
+        margin-bottom: 32px; /* Margem inferior de 32px */
+    }
+    
+    /* Estilos para o título h2 em seções */
+    section h2 {
+        font-size: 1.5em;
+        color: #007bff;
+    }
+
+    .produtos img {
+        height: 290px;
+        width: 290px;
+    }
+
+    .carrinho button {
+        width: 100%;
+    }
+    
+    /* Estilos para a disposição dos produtos */
+    .produtos {
+        display: grid; /* Utiliza grid para organizar os produtos */
+        grid-template-columns: repeat(2, 42.5%); /* Define as colunas do grid */
+        column-gap: 2%; /* Espaçamento entre colunas */
+        row-gap: 5%; /* Espaçamento entre linhas */
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
